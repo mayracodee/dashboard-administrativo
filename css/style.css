@@ -345,11 +345,11 @@ header {
 }
 
 .select-options {
-    display: none; /* Esconde a lista inicialmente. */
+    display: none;
 }
 
 .select-options.show {
-    display: block; /* Mostra a lista quando a classe "show" é adicionada. */
+    display: block; 
 }
 
 
@@ -602,6 +602,10 @@ header {
 
 .delete-modal-actions .delete-confirm-button:hover {
   filter: brightness(0.9);
+}
+
+.table-hint {
+    display: none;
 }
 
 /* --------- AÇÕES ---------- */

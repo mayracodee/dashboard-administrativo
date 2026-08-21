@@ -18,6 +18,7 @@
 
     aside {
         width: 80px;
+        height: 100dvh;
         padding: 24px 16px;
     }
 
@@ -102,14 +103,19 @@
         height: 300px;
     }
 
-
-
     .orders-table {
         max-width: 650px;
     }
 
     .orders-table table {
         width: 100%;
+    }
+
+    .table-hint {
+        display: block;
+        font-size: 14px;
+        color: #94A3B8;
+        margin-bottom: 8px;
     }
 
     .edit-modal,

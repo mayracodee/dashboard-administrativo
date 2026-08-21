@@ -6,7 +6,7 @@ O projeto apresenta uma interface para acompanhamento de métricas, desempenho d
 
 ## 🚀 Demonstração
 
-🔗 [Acessar projeto](COLE_AQUI_O_LINK_DO_DEPLOY)
+🔗 [Acessar projeto](https://dashboardadministrativomc.vercel.app/)
 
 ## 📸 Preview
 
