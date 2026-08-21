@@ -1,0 +1,178 @@
+@media (max-width: 1024px) {
+
+    aside {
+        width: 220px;
+    }
+
+    main {
+        margin-left: 220px;
+    }
+
+    .metrics-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    aside {
+        width: 80px;
+        padding: 24px 16px;
+    }
+
+    main {
+        margin-left: 80px;
+        width: calc(100% - 80px);
+        flex: none;
+    }
+
+    .sidebar-brand p {
+        display: none;
+    }
+
+    .sidebar-menu span {
+        display: none;
+    }
+
+    .profile-info {
+        display: none;
+    }
+
+    .sidebar-menu a {
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .sidebar-profile {
+        justify-content: center;
+    }
+
+    .sidebar-brand img {
+        display: none;
+    }
+
+    .sidebar-brand a {
+        display: block;
+        width: 48px;
+        height: 48px;
+        background-image: url("../assets/images/Ícone&favicon\ -\ svg.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header {
+        padding: 24px 16px;
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .search-box {
+        max-width: 250px;
+    }
+
+    .metrics,
+    .performance,
+    .orders,
+    .activity {
+        padding: 24px 16px;
+    }
+
+    .metrics-cards {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+    }
+
+    .performance-header {
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .performance-header select {
+        width: 120px;
+    }
+
+    .performance-chart {
+        max-width: 650px;
+        height: 300px;
+    }
+
+
+
+    .orders-table {
+        max-width: 650px;
+    }
+
+    .orders-table table {
+        width: 100%;
+    }
+
+    .edit-modal,
+    .delete-modal {
+        width: 100%;
+        max-width: 650px;
+        left: 5rem;
+    }
+
+    .edit-modal,
+    .delete-modal {
+        background: transparent;
+    }
+
+    .activity-list {
+        max-width: 650px;
+    }
+
+}
+
+@media (max-width: 675px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .orders-table {
+        overflow-x: auto;
+    }
+
+    .orders-table table {
+        min-width: 650px;
+    }
+
+    .orders-table::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .orders-table::-webkit-scrollbar-track {
+        background: #1E293B;
+    }
+
+    .orders-table::-webkit-scrollbar-thumb {
+        background: #64748B;
+        border-radius: 8px;
+    }
+
+    .edit-modal,
+    .delete-modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: calc(100vw - 32px);
+        max-width: 340px;
+        box-sizing: border-box;
+    }
+}

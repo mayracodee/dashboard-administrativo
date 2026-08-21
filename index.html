@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Universo 20 | Painel Administrativo</title>
+</head>
+
+<body>
+    <!------------- começo sidebar  ------------->
+
+    <div class="dashboard-layout">
+        <aside>
+            <div class="sidebar-brand">
+                <a href="#">
+                    <img src="assets/images/Logo Horizontal.svg" alt="Logo do Dashboard Universo 20">
+                </a>
+                <p>Painel Administrativo</p>
+            </div>
+
+            <nav>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="#overview">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-layout-dashboard-icon lucide-layout-dashboard">
+                                <rect width="7" height="9" x="3" y="3" rx="1" />
+                                <rect width="7" height="5" x="14" y="3" rx="1" />
+                                <rect width="7" height="9" x="14" y="12" rx="1" />
+                                <rect width="7" height="5" x="3" y="16" rx="1" />
+                            </svg>
+                            <span>Visão Geral</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#metrics">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M3 3v18h18" />
+                                <path d="m7 16 4-5 3 3 5-7" />
+                            </svg>
+                            <span>Métricas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#performance">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                <polyline points="16 7 22 7 22 13" />
+                            </svg>
+                            <span>Desempenho</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#orders">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="8" cy="21" r="1" />
+                                <circle cx="19" cy="21" r="1" />
+                                <path
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.96-1.6L21.5 7H5.12" />
+                            </svg>
+                            <span>Pedidos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#activity">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                            <span>Atividade</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-profile">
+                <img src="assets/images/Avatar.png" alt="Foto de perfil do usuário">
+                <div class="profile-info">
+                    <span>Mayra Lima</span>
+                    <span>Administradora</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <!------------- fim sidebar  ------------->
+
+        <!------------- começo main  ------------->
+        <main id="overview">
+
+            <header>
+
+                <div class="header-text">
+                    <h1>Visão Geral</h1>
+                    <p>Acompanhe sua loja</p>
+                </div>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-search-icon lucide-search">
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                        <input type="search" placeholder="Buscar...">
+                    </div>
+
+                    <button class="notification-button" type="button" aria-label="Abrir notificações">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-bell-icon lucide-bell">
+                            <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                            <path
+                                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+                        </svg>
+                    </button>
+
+                    <div class="notifications-panel">
+                        <p>Nenhuma notificação</p>
+                    </div>
+                </div>
+
+            </header>
+
+            <section class="metrics">
+                <h2>Métricas principais</h2>
+
+                <div class="metrics-cards" id="metrics">
+
+                    <article class="metric-card">
+                        <h3>Vendas totais</h3>
+                        <span class="metric-value">R$ 12.450,00</span>
+                        <span class="metric-change success">+8% este mês</span>
+                    </article>
+
+                    <article class="metric-card">
+                        <h3>Pedidos</h3>
+                        <span class="metric-value">128</span>
+                        <span class="metric-change success">+12 esta semana</span>
+                    </article>
+
+                    <article class="metric-card">
+                        <h3>Clientes</h3>
+                        <span class="metric-value">342</span>
+                        <span class="metric-change success">+18 este mês</span>
+                    </article>
+
+                    <article class="metric-card">
+                        <h3>Estoque baixo</h3>
+                        <span class="metric-value">9 produtos</span>
+                        <span class="metric-change warning">Requer atenção</span>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="performance" id="performance">
+                <div class="performance-header">
+                    <h2>Desempenho de vendas</h2>
+                    <div class="select-wrapper">
+                        <button type="button" class="select-button">
+                            <span class="select-button-text">Hoje</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+
+                        <ul class="select-options">
+                            <li>Hoje</li>
+                            <li>Esta semana</li>
+                            <li>Este mês</li>
+                            <li>Este ano</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="performance-chart">
+
+                    <canvas id="salesChart"></canvas>
+
+                </div>
+
+            </section>
+
+            <section class="orders" id="orders">
+                <div class="orders-header">
+                    <h2>Pedidos Recentes</h2>
+                </div>
+                <div class="orders-table">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Pedido</th>
+                                <th>Cliente</th>
+                                <th>Status</th>
+                                <th>Total</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="orders-table-body">
+
+                        </tbody>
+
+                    </table>
+
+                    <div class="edit-modal">
+
+                        <form class="edit-form">
+
+                            <h3>Editar pedido</h3>
+
+                            <label for="editClient">Cliente</label>
+                            <input type="text" id="editClient">
+
+                            <label for="editStatus">Status</label>
+
+                            <select id="editStatus">
+                                <option value="Pago">Pago</option>
+                                <option value="Pendente">Pendente</option>
+                                <option value="Cancelado">Cancelado</option>
+                            </select>
+
+                            <label for="editTotal">Total</label>
+                            <input type="number" id="editTotal">
+
+                            <div class="edit-actions">
+                                <button type="button" class="cancel-button">Cancelar</button>
+                                <button type="submit" class="save-button">Salvar</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="delete-modal">
+
+                        <div class="delete-modal-content">
+
+                            <h2>Excluir pedido</h2>
+
+                            <p>Tem certeza que deseja excluir este pedido?</p>
+
+                            <div class="delete-modal-actions">
+
+                                <button type="button" class="delete-cancel-button">
+                                    Cancelar
+                                </button>
+
+                                <button type="button" class="delete-confirm-button">
+                                    Excluir
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="activity" id="activity">
+                <div class="activity-header">
+                    <h2>Atividade Recente</h2>
+                </div>
+
+                <div class="activity-list">
+
+                    <article class="activity-item">
+
+                        <div class="activity-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart">
+                                <circle cx="8" cy="21" r="1" />
+                                <circle cx="19" cy="21" r="1" />
+                                <path
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                            </svg>
+                        </div>
+
+                        <div class="activity-content">
+                            <p>Pedido #1024 realizado.</p>
+                            <span>Há 5 minutos</span>
+                        </div>
+
+                    </article>
+
+                    <article class="activity-item">
+
+                        <div class="activity-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user-plus-icon lucide-user-plus">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <line x1="19" x2="19" y1="8" y2="14" />
+                                <line x1="22" x2="16" y1="11" y2="11" />
+                            </svg>
+                        </div>
+
+                        <div class="activity-content">
+                            <p>Novo cliente cadastrado.</p>
+                            <span>Há 20 minutos</span>
+                        </div>
+
+                    </article>
+
+                    <article class="activity-item">
+
+                        <div class="activity-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-package-icon lucide-package">
+                                <path
+                                    d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+                                <path d="M12 22V12" />
+                                <polyline points="3.29 7 12 12 20.71 7" />
+                                <path d="m7.5 4.27 9 5.15" />
+                            </svg>
+                        </div>
+
+                        <div class="activity-content">
+                            <p>Produto atualizado.</p>
+                            <span>Há 1 hora</span>
+                        </div>
+
+                    </article>
+
+                    <article class="activity-item">
+
+                        <div class="activity-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-triangle-alert-icon lucide-triangle-alert">
+                                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+                                <path d="M12 9v4" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                        </div>
+
+                        <div class="activity-content">
+                            <p>Estoque baixo.</p>
+                            <span>Há 2 hora</span>
+                        </div>
+
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+        <!------------- fim main  ------------->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
