@@ -1,4 +1,21 @@
 /* =====================================================
+   CAMPO DE BUSCA
+===================================================== */
+
+const searchInput = document.querySelector(".search-box input");
+
+searchInput.addEventListener("keydown", (event) => {
+
+    if (event.key === "Enter") {
+
+        searchInput.value = "";
+
+    }
+
+});
+
+
+/* =====================================================
    BOTÃO DE NOTIFICAÇÕES
 ===================================================== */
 
