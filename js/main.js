@@ -14,6 +14,12 @@ searchInput.addEventListener("keydown", (event) => {
 
 });
 
+searchInput.addEventListener("search", () => {
+
+    searchInput.value = "";
+
+});
+
 
 /* =====================================================
    BOTÃO DE NOTIFICAÇÕES
