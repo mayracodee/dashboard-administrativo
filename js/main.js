@@ -20,6 +20,12 @@ searchInput.addEventListener("search", () => {
 
 });
 
+searchInput.addEventListener("blur", () => {
+
+    searchInput.value = "";
+
+});
+
 
 /* =====================================================
    BOTÃO DE NOTIFICAÇÕES
